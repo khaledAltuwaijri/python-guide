@@ -1,5 +1,7 @@
-Picking an Interpreter
-======================
+Picking an Python Interpreter (3 vs. 2)
+=======================================
+
+.. image:: https://farm5.staticflickr.com/4265/34484834733_5b80f65ab1_k_d.jpg
 
 .. _which-python:
 
@@ -20,6 +22,10 @@ The basic gist of the state of things is as follows:
 
 Recommendations
 ~~~~~~~~~~~~~~~
+
+
+.. note:: The use of **Python 3** is *highly* preferred over Python 2. Consider upgrading your applications and infrastructure if you find yourself *still* using Python 2 in production today. If you are using Python 3, congratulations — you are indeed a person of excellent taste.
+  —*Kenneth Reitz*
 
 I'll be blunt:
 
@@ -52,7 +58,9 @@ It is possible to `write code that works on Python 2.6, 2.7, and Python 3
 <https://docs.python.org/3/howto/pyporting.html>`_. This
 ranges from trivial to hard depending upon the kind of software
 you are writing; if you're a beginner there are far more important things to
-worry about.
+worry about.  Note that Python 2.6 is end-of-life upstream, so you shouldn't
+try to write 2.6-compatible code unless you're being paid specifically to
+do that.
 
 Implementations
 ~~~~~~~~~~~~~~~

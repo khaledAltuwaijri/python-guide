@@ -3,10 +3,12 @@
 Installing Python 2 on Mac OS X
 ===============================
 
+.. image:: https://farm5.staticflickr.com/4268/34435688560_4cc2a7bcbb_k_d.jpg
+
 .. note::
     Check out our :ref:`guide for installing Python 3 on OS X<install3-osx>`.
 
-The latest version of Mac OS X, Sierra, **comes with Python 2.7 out of the box**.
+The latest version of Mac OS X, High Sierra, **comes with Python 2.7 out of the box**.
 
 You do not need to install or configure anything else to use Python. Having said
 that, I would strongly recommend that you install the tools and libraries
@@ -61,21 +63,28 @@ line at the bottom of your :file:`~/.profile` file
 
 .. code-block:: console
 
-    export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+    export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 Now, we can install Python 2.7:
 
 .. code-block:: console
 
-    $ brew install python
+    $ brew install python@2
 
-or Python 3:
+Because ``python@2`` is a "keg", we need to update our ``PATH`` again, to point at our new installation:
 
 .. code-block:: console
 
-    $ brew install python3
+    export PATH="/usr/local/opt/python@2/libexec/bin:$PATH"
 
-This will take a minute or two.
+Homebrew names the executable ``python2`` so that you can still run the system Python via the executable ``python``.
+
+
+.. code-block:: console
+
+    $ python -V   # Homebrew installed Python 3 interpreter (if installed)
+    $ python2 -V  # Homebrew installed Python 2 interpreter
+    $ python3 -V  # Homebrew installed Python 3 interpreter (if installed)
 
 
 Setuptools & Pip
@@ -92,6 +101,12 @@ capability to your own Python software with very little work.
 that is recommended over ``easy_install``. It is superior to ``easy_install``
 in `several ways <https://python-packaging-user-guide.readthedocs.io/pip_easy_install/#pip-vs-easy-install>`_,
 and is actively maintained.
+
+.. code-block:: console
+
+    $ pip2 -V  # pip pointing to the Homebrew installed Python 2 interpreter
+    $ pip -V  # pip pointing to the Homebrew installed Python 3 interpreter (if installed)
+
 
 
 Virtual Environments

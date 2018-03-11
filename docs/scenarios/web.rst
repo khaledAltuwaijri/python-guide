@@ -2,6 +2,8 @@
 Web Applications & Frameworks
 =============================
 
+.. image:: https://farm3.staticflickr.com/2891/34309496175_b82d104282_k_d.jpg
+
 As a powerful scripting language adapted to both fast prototyping
 and bigger projects, Python is widely used in web application
 development.
@@ -60,7 +62,7 @@ modules <http://djangopackages.com/>`_ that can be incorporated into a new
 project as-is, or customized to fit your needs.
 
 There are annual Django conferences `in the United States
-<http://djangocon.us>`_ and `in Europe <http://djangocon.eu>`_.
+<http://djangocon.us>`_, `Europe <http://djangocon.eu>`_, and `Australia <http://djangocon.com.au>`_.
 
 The majority of new Python web applications today are built with Django.
 
