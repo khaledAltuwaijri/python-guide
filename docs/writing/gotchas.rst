@@ -1,7 +1,7 @@
 Common Gotchas
 ==============
 
-.. image:: https://farm5.staticflickr.com/4163/34435688380_b5a740762b_k_d.jpg
+.. image:: /_static/photos/34435688380_b5a740762b_k_d.jpg
 
 For the most part, Python aims to be a clean and consistent language that
 avoids surprises. However, there are a few cases that can be confusing to
@@ -37,10 +37,10 @@ What You Might Have Expected to Happen
 .. code-block:: python
 
     my_list = append_to(12)
-    print my_list
+    print(my_list)
 
     my_other_list = append_to(42)
-    print my_other_list
+    print(my_other_list)
 
 A new list is created each time the function is called if a second argument
 isn't provided, so that the output is::
@@ -108,7 +108,7 @@ What You Might Have Expected to Happen
 .. testcode::
 
     for multiplier in create_multipliers():
-        print multiplier(2)
+        print(multiplier(2))
 
 A list containing five functions that each have their own closed-over ``i``
 variable that multiplies their argument, producing::

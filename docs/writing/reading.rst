@@ -1,7 +1,7 @@
 Reading Great Code
 ==================
 
-.. image:: https://farm5.staticflickr.com/4221/34689452831_93d7fd0571_k_d.jpg
+.. image:: /_static/photos/34689452831_93d7fd0571_k_d.jpg
 
 One of the core tenets behind the design of Python is creating
 readable code. The motivation behind this design is simple: The number
@@ -9,14 +9,6 @@ one thing that Python programmers do is read code.
 
 One of the secrets of becoming a great Python programmer is to read,
 understand, and comprehend excellent code.
-
-.. raw:: html
-
-    <iframe width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/Jc8M9-LoEuo" 
-            frameborder="0" allowfullscreen></iframe>
-
 
 Excellent code typically follows the guidelines outlined in
 :ref:`code_style`, and does its best to express a clear and concise
